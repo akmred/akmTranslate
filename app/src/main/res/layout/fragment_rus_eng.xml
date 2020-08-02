@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextEng"
+        android:layout_width="336dp"
+        android:layout_height="65dp"
+        android:text="@string/empty"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="85dp"
+        tools:text="enter text" />
+
+    <TextView
+        android:id="@+id/stranslate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/translate"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="169dp"
+        tools:text="translate:" />
+
+    <TextView
+        android:id="@+id/translateTextRus"
+        android:layout_width="339dp"
+        android:layout_height="52dp"
+        android:text="TextView"
+        android:textSize="35dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="212dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

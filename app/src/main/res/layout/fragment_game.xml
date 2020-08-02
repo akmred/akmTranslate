@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textQuestion"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:text="text question"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="83dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/sText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textHowToTranslate"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="154dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/enterAnswer"
+        android:layout_width="336dp"
+        android:layout_height="65dp"
+        android:text="@string/empty"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="214dp"
+        tools:text="enter text" />
+
+    <TextView
+        android:id="@+id/textTrueFalse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="answer"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="306dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nWin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nWin"
+        android:textColor="#46B34B"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="306dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/nLost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nLost"
+        android:textColor="#E91E63"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="306dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textPalka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/priznak"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="306dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="136dp"
+        android:layout_height="69dp"
+        android:text="@string/textButtonStart"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="366dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="143dp"
+        android:layout_height="71dp"
+        android:text="@string/textButtonNext"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="364dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

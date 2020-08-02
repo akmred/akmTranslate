@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">myWheather</string>
+    <string name="textTranslate">изучение слов. русский вводится, кнопка изучить. сохраняется в базу и изучаешь!
+    задачи: идею обработать,основной сценарий, требования</string>
+    <string name="empty">Empty</string>
+    <string name="translate">translate</string>
+    <string name="textHowToTranslate">How to translate?</string>
+    <string name="priznak">/</string>
+    <string name="textButtonStart">Start</string>
+    <string name="textButtonNext">Next</string>
+
+
+</resources>
