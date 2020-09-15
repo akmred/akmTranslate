@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -11,88 +12,121 @@
         android:layout_height="50dp"
         android:text="text question"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="83dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/sText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:text="@string/textHowToTranslate"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="154dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textQuestion"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/enterAnswer"
         android:layout_width="336dp"
         android:layout_height="65dp"
+        android:layout_marginTop="24dp"
         android:text="@string/empty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sText"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="214dp"
         tools:text="enter text" />
 
     <TextView
         android:id="@+id/textTrueFalse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:text="answer"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="306dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterAnswer"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/nWin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
         android:text="nWin"
         android:textColor="#46B34B"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="306dp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.342"
+        app:layout_constraintStart_toEndOf="@+id/textTrueFalse"
+        app:layout_constraintTop_toBottomOf="@+id/enterAnswer"
+        app:layout_constraintVertical_bias="0.011"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/nLost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="44dp"
         android:text="nLost"
         android:textColor="#E91E63"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="217dp"
-        tools:layout_editor_absoluteY="306dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterAnswer"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textPalka"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="1dp"
         android:text="@string/priznak"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="207dp"
-        tools:layout_editor_absoluteY="306dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nLost"
+        app:layout_constraintStart_toEndOf="@+id/nWin"
+        app:layout_constraintTop_toBottomOf="@+id/enterAnswer"
+        app:layout_constraintVertical_bias="0.004"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/buttonStart"
         android:layout_width="136dp"
         android:layout_height="69dp"
+        android:layout_marginStart="44dp"
         android:text="@string/textButtonStart"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="366dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/buttonNext"
         android:layout_width="143dp"
         android:layout_height="71dp"
+        android:layout_marginStart="44dp"
         android:text="@string/textButtonNext"
-        tools:layout_editor_absoluteX="217dp"
-        tools:layout_editor_absoluteY="364dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

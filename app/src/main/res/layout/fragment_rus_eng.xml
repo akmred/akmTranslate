@@ -1,38 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/editTextEng"
-        android:layout_width="336dp"
+        android:id="@+id/editTextRus"
+        android:layout_width="344dp"
         android:layout_height="65dp"
-        android:text="@string/empty"
+        android:hint="введите слово на русском"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.837"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="85dp"
-        tools:text="enter text" />
+        tools:text="enter text for rus" />
 
     <TextView
-        android:id="@+id/stranslate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/translate"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="169dp"
-        tools:text="translate:" />
-
-    <TextView
-        android:id="@+id/translateTextRus"
-        android:layout_width="339dp"
-        android:layout_height="52dp"
-        android:text="TextView"
+        android:id="@+id/translateTextEng"
+        android:layout_width="318dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="32dp"
+        android:hint="translate for english"
         android:textSize="35dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="212dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextRus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

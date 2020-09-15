@@ -1,13 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">translate</string>
+    <string name="app_name">Переводчик</string>
     <string name="textTranslate">изучение слов. русский вводится, кнопка изучить. сохраняется в базу и изучаешь!
     задачи: идею обработать,основной сценарий, требования</string>
     <string name="empty">ввести слово</string>
-    <string name="translate">translate</string>
-    <string name="textHowToTranslate">How to translate?</string>
+    <string name="translate">перевод</string>
+    <string name="textHowToTranslate">Как пеерводится?</string>
     <string name="priznak">/</string>
-    <string name="textButtonStart">Start</string>
-    <string name="textButtonNext">Next</string>
-
+    <string name="textButtonStart">Старт</string>
+    <string name="textButtonNext">Следующий</string>
 
 </resources>

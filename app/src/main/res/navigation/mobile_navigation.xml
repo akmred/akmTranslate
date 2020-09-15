@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_rus_eng"
-        android:name="com.example.mywheather.iu.eng_rus.eng_rusFragment"
+        android:name="com.example.mywheather.iu.rus_eng.rus_engFragment"
         android:label="rus_eng"
         tools:layout="@layout/fragment_rus_eng"/>
 
