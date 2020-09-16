@@ -41,14 +41,17 @@ public class rus_engFragment extends Fragment {
                          if (event.getAction() == KeyEvent.ACTION_DOWN &&
                                     (keyCode == KeyEvent.KEYCODE_ENTER)) {
 
-                             ThreadTranslate threadTranslate = new ThreadTranslate(editText.getText().toString(), "en", "ru");
-                             threadTranslate.start();
-                             try {
-                                 threadTranslate.join();
-                             } catch (InterruptedException e) {
-                                 e.printStackTrace();
-                             }
-                             translateTextEng.setText(threadTranslate.GetTextTranslate());
+//                             ThreadTranslate threadTranslate = new ThreadTranslate(editText.getText().toString(), "en", "ru");
+//                             threadTranslate.start();
+//                             try {
+//                                 threadTranslate.join();
+//                             } catch (InterruptedException e) {
+//                                 e.printStackTrace();
+//                             }
+                             ThreadTranslate textRespond= new ThreadTranslate(editText.getText().toString(), "en", "ru");
+                             textRespond.run();
+
+//                             translateTextEng.setText(threadTranslate.GetTextTranslate());
 
                              return true;
 

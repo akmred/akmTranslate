@@ -1,7 +1,11 @@
 package com.example.mywheather.iu.translate;
 
 public class BodyResponse {
-    public String text;
+    private String text = "";
+
+    public  BodyResponse() {
+
+    }
 
     public String getText() {
         return text;
