@@ -1,11 +1,9 @@
 package com.example.mywheather.iu.translate;
 
-import org.jetbrains.annotations.NotNull;
+import android.util.Log;
 
 import java.io.IOException;
 
-import okhttp3.Call;
-import okhttp3.Callback;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -19,58 +17,35 @@ import okhttp3.Response;
 public class ConnectTranslateAPI {
     private StructuraTranslate translateRule;
 
+    private static final String TAG = "MyLog";
 
     public ConnectTranslateAPI(StructuraTranslate translateStruct) {
         this.translateRule = translateStruct;
     }
 
     /*
-    * Запрпашивает переод у апи
+    * Запрпашивает перевод у апи
     * */
     public String getRespondOnPOST() throws IOException {
-
-//        OkHttpClient client = new OkHttpClient().newBuilder()
-//                .build();
-//        MediaType mediaType = MediaType.parse("application/json");
-//        RequestBody body = RequestBody.create(mediaType, translateRule.getTextSourceForGSon());
-//        Request request = new Request.Builder()
-//                .url("https://api.cognitive.microsofttranslator.com/translate?api-version=3.0" + translateRule.getToFrom())
-//                .method("POST", body)
-//                .addHeader("Ocp-Apim-Subscription-Key", "467a55e9232d43418688dd5fb21d345c")
-//                .addHeader("Content-Type", "application/json")
-//                .build();
 
         OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
         MediaType mediaType = MediaType.parse("application/json");
-        RequestBody body = RequestBody.create(mediaType, "[{\n    \"text\": \"hello world!\"\n}\n]");
+        RequestBody body = RequestBody.create(mediaType, translateRule.getTextSourceForGSon());
         Request request = new Request.Builder()
-                .url("https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to=ru")
+                .url("https://api.cognitive.microsofttranslator.com/translate?api-version=3.0" + translateRule.getToFrom())
                 .method("POST", body)
                 .addHeader("Ocp-Apim-Subscription-Key", "467a55e9232d43418688dd5fb21d345c")
                 .addHeader("Content-Type", "application/json")
                 .build();
-       client.newCall(request).enqueue(new Callback() {
-           @Override
-           public void onFailure(@NotNull Call call, @NotNull IOException e) {
-               e.printStackTrace();
-           }
 
-           @Override
-           public void onResponse(@NotNull Call call, @NotNull Response response) throws IOException {
+        Log.i(TAG, "запрос в апи: " + request.toString());
 
-               if (!response.isSuccessful()){
-                   throw new IOException("Unexpected code "+ response);
-               } else {
-                   String r = "Happy";
-               }
-           }
-       });
+        Response response = client.newCall(request).execute();
 
+        Log.i(TAG, "ответ из апи: " + request.toString());
 
-
-//            return response.body().string();
-            return "";
+        return response.body().string();
 
     }
 
